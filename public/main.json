@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "player_img": "https://i.ibb.co.com/8sBSRX0/streetball-tournament-banner-template.png",
+        "player_name": "Alex Turner",
+        "rating": 85,
+        "work": "Forward",
+        "price": "$25,000"
+    },
+    {
+        "id": 2,
+        "player_img": "https://i.ibb.co.com/SKKCDny/rugby-sports-horizontal-banner-template.png",
+        "player_name": "Jamie Smith",
+        "rating": 90,
+        "work": "Midfielder",
+        "price": "$30,000"
+    },
+    {
+        "id": 3,
+        "player_img": "https://i.ibb.co.com/x2Bd1Pt/young-player-game-shot-competition.jpg",
+        "player_name": "Chris Johnson",
+        "rating": 78,
+        "work": "Defender",
+        "price": "$15,000"
+    },
+    {
+        "id": 4,
+        "player_img": "https://i.ibb.co.com/6BPpqZy/e6c1815b-5f03-4341-8d94-c81b9873426b.png",
+        "player_name": "Morgan Lee",
+        "rating": 82,
+        "work": "Goalkeeper",
+        "price": "$20,000"
+    },
+    {
+        "id": 5,
+        "player_img": "https://i.ibb.co.com/HHsQHBt/banner-template-black-white-with-male-basketball-athlete.png",
+        "player_name": "Taylor Brown",
+        "rating": 88,
+        "work": "Winger",
+        "price": "$28,000"
+    },
+    {
+        "id": 6,
+        "player_img": "https://i.ibb.co.com/DMsVpzZ/shot-attractive-young-ginger-male-with-thick-beard-points-upper-right-corner-has-self-confident-faci.jpg",
+        "player_name": "Jordan White",
+        "rating": 76,
+        "work": "Center Back",
+        "price": "$12,000"
+    }
+]
