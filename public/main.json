@@ -1,50 +1,87 @@
-[
-    {
+{
+
+  "products":[ 
+      {
         "id": 1,
-        "player_img": "https://i.ibb.co.com/8sBSRX0/streetball-tournament-banner-template.png",
-        "player_name": "Alex Turner",
+        "image": "https://i.ibb.co.com/By97cYr/cricketer-field-batting-position.jpg",
+        "name": "Alex Turner",
+        "country":"England",
         "rating": 85,
-        "work": "Forward",
-        "price": "$25,000"
-    },
-    {
+        "role": "Forward",
+        "price": 250000
+      },
+      {
         "id": 2,
-        "player_img": "https://i.ibb.co.com/SKKCDny/rugby-sports-horizontal-banner-template.png",
-        "player_name": "Jamie Smith",
+        "image": "https://i.ibb.co.com/GpwTYfn/american-football-player-gradient-studio-neon-light.jpg",
+        "name": "Jamie Smith",
+        "country":"India",
         "rating": 90,
-        "work": "Midfielder",
-        "price": "$30,000"
-    },
-    {
+        "role": "Midfielder",
+        "price": 300000
+      },
+      {
         "id": 3,
-        "player_img": "https://i.ibb.co.com/x2Bd1Pt/young-player-game-shot-competition.jpg",
-        "player_name": "Chris Johnson",
+        "image": "https://i.ibb.co.com/9yGrSbb/cricket-player-with-bat-ball-3d-illustration.jpg",
+        "name": "Chris Johnson",
+        "country":"England",
         "rating": 78,
-        "work": "Defender",
-        "price": "$15,000"
-    },
-    {
+        "role": "Defender",
+        "price": 150000
+      },
+      {
         "id": 4,
-        "player_img": "https://i.ibb.co.com/6BPpqZy/e6c1815b-5f03-4341-8d94-c81b9873426b.png",
-        "player_name": "Morgan Lee",
+        "image": "https://i.ibb.co.com/rxnc00s/young-sporty-man-headband-touching-his-bandaged-wrist-feeling-pain-green.jpg",
+        "name": "Morgan Lee",
+        "country":"Bangladesh",
         "rating": 82,
-        "work": "Goalkeeper",
-        "price": "$20,000"
-    },
-    {
+        "role": "Goalkeeper",
+        "price": 200000
+      },
+      {
         "id": 5,
-        "player_img": "https://i.ibb.co.com/HHsQHBt/banner-template-black-white-with-male-basketball-athlete.png",
-        "player_name": "Taylor Brown",
+        "image": "https://i.ibb.co.com/YdN4djW/front-view-baseball-player-with-copy-space.jpg",
+        "name": "Taylor Brown",
+        "country":"America",
         "rating": 88,
-        "work": "Winger",
-        "price": "$28,000"
-    },
-    {
+        "role": "Winger",
+        "price": 280000
+      },
+      {
         "id": 6,
-        "player_img": "https://i.ibb.co.com/DMsVpzZ/shot-attractive-young-ginger-male-with-thick-beard-points-upper-right-corner-has-self-confident-faci.jpg",
-        "player_name": "Jordan White",
+        "image": "https://i.ibb.co.com/Qk4zbNq/side-view-kids-playing-kickball.jpg",
+        "name": "Jordan White",
+        "country":"Africa",
         "rating": 76,
-        "work": "Center Back",
-        "price": "$12,000"
-    }
-]
+        "role": "Center Back",
+        "price": 120000
+      },
+      {
+        "id": 7,
+        "image": "https://i.ibb.co.com/GpwTYfn/american-football-player-gradient-studio-neon-light.jpg",
+        "name": "Jamie Smith",
+        "country":"India",
+        "rating": 90,
+        "role": "Midfielder",
+        "price": 300000
+      },
+      {
+        "id": 8,
+        "image": "https://i.ibb.co.com/9yGrSbb/cricket-player-with-bat-ball-3d-illustration.jpg",
+        "name": "Alex Turner",
+        "country":"England",
+        "rating": 85,
+        "role": "Forward",
+        "price": 250000
+      },
+      {
+        "id": 9,
+        "image": "https://i.ibb.co.com/By97cYr/cricketer-field-batting-position.jpg",
+        "name": "Morgan Lee",
+        "country":"Bangladesh",
+        "rating": 82,
+        "role": "Goalkeeper",
+        "price": 200000
+      }
+ ]
+
+}  

@@ -1,10 +1,14 @@
 
 
-const CartContainer = () => {
+const CartContainer = ({ productQueue }) => {
     return (
-        <div>
-            <h1 className="btn">Available</h1>
-            <h1 className="btn">Selected(0)</h1>
+        <div className="flex">
+            <div className="btn">Available</div>
+            <div className="btn">Selected:{productQueue.length}
+                <div className="">
+
+                </div>
+            </div>
         </div>
     );
 };

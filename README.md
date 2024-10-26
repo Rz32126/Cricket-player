@@ -1,6 +1,6 @@
-# React + Vite
+# Assignment-7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is is a mimi project about Cricket. You can choose some of your want player according to your budget.
 
 Currently, two official plugins are available:
 
