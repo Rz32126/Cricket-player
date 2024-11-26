@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
-// import Player from "../Player/Player";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { FaFlag } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 
 const AvailablePlayer = ({ addProductQueue }) => {
@@ -17,7 +19,7 @@ const AvailablePlayer = ({ addProductQueue }) => {
         <div>
             <h2 className="btn mx-4">Available Players{products.length}</h2>
 
-          <div className="grid grid-cols-3 mt-7 gap-4 w-full mx-28">
+          <div className="grid lg:grid-cols-3 grid-cols-1 mt-7 gap-4 w-8/12">
             {products.map(product => (
                 <div key={product.id} className="card bg-base-100">
                 <figure>
@@ -26,15 +28,15 @@ const AvailablePlayer = ({ addProductQueue }) => {
                     alt="player image" />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">{product.name}</h2>
-                  <p>Country : {product.country}</p>
+                  <h2 className="card-title"><IoPersonCircleSharp />{product.name}</h2>
+                  <p className="flex gap-3 font-semibold">Country : <FaFlag /> {product.country}</p>
                   <div className="border"></div>
-                  <p>Rating : {product.rating}</p>
-                  <p>Role : {product.role}</p>
-                  <p>Price : $ {product.price}</p>
+                  <p className="font-semibold">Rating : {product.rating}</p>
+                  <p className="font-semibold">Role : {product.role}</p>
+                  <p className="font-semibold">Price : $ {product.price}</p>
 
                   <div className="card-actions justify-center">
-                    <button onClick={()=>addProductQueue(product)} className="btn">Choose Player</button>
+                    <button onClick={()=>addProductQueue(product)} className="btn bg-yellow-200">Choose Player</button>
                   </div>
                 </div>
               </div>
@@ -49,4 +51,12 @@ const AvailablePlayer = ({ addProductQueue }) => {
     );
 };
 
+AvailablePlayer.propTypes = {
+  addProductQueue: PropTypes.object
+}
+
 export default AvailablePlayer;
+
+
+
+
