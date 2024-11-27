@@ -4,24 +4,19 @@ import Player from '../Player/Player';
 import Selected from '../Selected/Selected';
 // { productQueue }
 
-const CartContainer = ({ handleIsActiveState, isActive, }) => {
+const CartContainer = ({ handleIsActiveState, isActive, handleSelectedPlayer, selectedPlayers, handleDelete }) => {
     
     return (
         <div className="">
             <div className='flex justify-end'>
                 <div onClick={() => handleIsActiveState("player")} className={`${isActive.player?"btn active":"btn"}`}>Available</div>
-                <div onClick={() => handleIsActiveState("selected")} className={`${isActive.player?"btn":"active btn"}`}>Selected
+                <div onClick={() => handleIsActiveState("selected")} className={`${isActive.player?"btn":"active btn"}`}>Selected : {selectedPlayers.length}
                 </div>
                 
             </div>
 
-            {isActive.player?<Player></Player>:<Selected></Selected>}
-            {/* <div className="btn">Available</div>
-            <div className="btn">Selected:{productQueue.length}
-            {
-                productQueue.map(player => <Player key={player.id} player={player}></Player>)
-            }
-            </div> */}
+            {isActive.player?<Player handleSelectedPlayer={handleSelectedPlayer}></Player>:<Selected selectedPlayers={selectedPlayers} handleDelete={handleDelete}></Selected>}
+            
         </div>
     );
 };
@@ -29,7 +24,9 @@ const CartContainer = ({ handleIsActiveState, isActive, }) => {
 CartContainer.propTypes = {
     handleIsActiveState: PropTypes.object,
     isActive: PropTypes.object,
-    addProductQueue: PropTypes.object
+    handleSelectedPlayer: PropTypes.object,
+    selectedPlayers: PropTypes.object,
+    handleDelete: PropTypes.object
   }
 
 export default CartContainer;

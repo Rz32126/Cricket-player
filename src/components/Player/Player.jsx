@@ -5,10 +5,10 @@ import { useState } from "react";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa";
 
-// { player }
 
-const Player = ({ addProductQueue }) => {
-    // const {name} = player;
+
+const Player = ({ handleSelectedPlayer }) => {
+  
     const [products, setPlayers] = useState([]);
 
     useEffect( () => {
@@ -21,7 +21,7 @@ const Player = ({ addProductQueue }) => {
     
     return (
       <div>
-      <h2 className="btn mx-4">Available Players{products.length}</h2>
+      <h2 className="btn mx-4">Available Players</h2>
 
     <div className="grid lg:grid-cols-3 grid-cols-1 mt-7 gap-4 w-11/12 mx-auto">
       {products.map(product => (
@@ -40,7 +40,7 @@ const Player = ({ addProductQueue }) => {
             <p className="font-semibold">Price : $ {product.price}</p>
 
             <div className="card-actions justify-center">
-              <button onClick={()=>addProductQueue(product)} className="btn bg-yellow-200">Choose Player</button>
+              <button onClick={()=>handleSelectedPlayer(product)} className="btn bg-yellow-200">Choose Player</button>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Player = ({ addProductQueue }) => {
 };
 
 Player.propTypes = {
-  addProductQueue: PropTypes.object
+  handleSelectedPlayer: PropTypes.object
 }
 
 export default Player;

@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png'
+import { BsCoin } from "react-icons/bs";
 
 const Navbar = () => {
     return (
@@ -11,7 +12,7 @@ const Navbar = () => {
                 <p>Fixture</p>
                 <p>Teams</p>
                 <p>Schedules</p>
-                <p className="btn">0 coins</p>
+                <p className="btn"> 50000 coins<span className='text-yellow-400'><BsCoin /></span></p>
             </div>
         </div>
     );

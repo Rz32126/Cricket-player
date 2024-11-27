@@ -27,32 +27,43 @@ function App() {
       })
      }
   }
- 
 
-  const [productQueue, setProductQueue] = useState([])
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
 
-  const addProductQueue = product => {
-    const isExist = productQueue.find(previousProduct=> previousProduct.id === product.id)
-     if (!isExist) {
-      setProductQueue([...productQueue,product]);
-     } else {
+  // const [price, setPrice] = useState(50000);
+
+  // const handleAddPrice = (price) => {
+  //     setPrice(price+price)
+  // }
+
+  const handleDelete = (id) => {
+    const restPlayer = selectedPlayers.filter((p) => p.id != id);
+    setSelectedPlayers(restPlayer);
+  }
+
+  const handleSelectedPlayer = (player) => {
+    const isExist = selectedPlayers.find(previousPlayer => previousPlayer.id === player.id)
+    if (!isExist) {
+      setSelectedPlayers([...selectedPlayers, player]);
+    }  else {
+      // handleAddPrice(player.price)
       alert('player already added')
      }
-
-
     
   }
 
- 
+  
+
 
   return (
     <>
        <Navbar></Navbar>
        <Header></Header>
-      <div className="flex justify-between mt-4 mx-4">
-        {/* <AvailablePlayer addProductQueue={addProductQueue}></AvailablePlayer> */}
-        {/* productQueue={productQueue} */}
-        <CartContainer isActive={isActive} handleIsActiveState={handleIsActiveState} addProductQueue={addProductQueue}></CartContainer>
+      <div className="mt-4">
+        <CartContainer isActive={isActive} handleIsActiveState={handleIsActiveState} handleSelectedPlayer={handleSelectedPlayer}
+        selectedPlayers={selectedPlayers}
+        handleDelete={handleDelete}
+        ></CartContainer>
       </div>
       <CardForm></CardForm>
       <Footer></Footer>
