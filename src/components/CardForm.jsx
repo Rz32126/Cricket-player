@@ -2,7 +2,7 @@
 
 const CardForm = () => {
     return (
-        <div className="bg-orange-300 mx-20 rounded-lg h-64 relative top-24 border-2 border-yellow-400 px-2 py-7">
+        <div className="bg-orange-50 bg-banner mx-20 rounded-lg h-64 relative top-24 border-4 border-orange-300 px-2 py-7">
            <p className="font-bold text-2xl text-center ">Subscribe to our Newsletter</p>
             
             <p className="text-center mt-9">Get the latest updates and news right in your inbox!</p>

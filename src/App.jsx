@@ -5,6 +5,9 @@ import CartContainer from './components/CartContainer/CartContainer'
 import Footer from './components/Footer'
 import CardForm from './components/CardForm'
 import { useState } from 'react'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -52,7 +55,7 @@ function App() {
       setSelectedPlayers([...selectedPlayers, player]);
     }  else {
       
-      alert('player already added');
+      toast.error('Player already added');
      }
     
   }
@@ -61,7 +64,8 @@ function App() {
 
 
   return (
-    <>
+    <> 
+       <ToastContainer />
        <Navbar price={price}></Navbar>
        <Header handleCredit={handleCredit}></Header>
       <div className="mt-4">

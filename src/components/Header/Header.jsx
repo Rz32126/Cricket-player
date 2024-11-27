@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Header = ({ handleCredit }) => {
     return (
-        <div className='text-center bg-slate-950 mx-4 rounded-xl mt-5'>
+        <div className='text-center bg-banner bg-slate-950 mx-4 rounded-xl mt-5'>
             <div className='flex justify-center mt-4'>
               <img src={banner} alt=''/>
             </div>

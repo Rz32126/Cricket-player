@@ -7,7 +7,7 @@
         "name": "Musfiqur Rahim",
         "country":"Bangladesh",
         "rating": 85,
-        "role": "Bating",
+        "role": "Batsman",
         "price": 250000
       },
       {
@@ -34,7 +34,7 @@
         "name": "Morgan Lee",
         "country":"England",
         "rating": 82,
-        "role": "bating",
+        "role": "Batsman",
         "price": 200000
       },
       {
@@ -52,7 +52,7 @@
         "name": "Jordan White",
         "country":"Australia",
         "rating": 76,
-        "role": "Baller",
+        "role": "Bowling",
         "price": 120000
       },
       {
@@ -70,16 +70,16 @@
         "name": "Virat Kohily",
         "country":"India",
         "rating": 85,
-        "role": "All rounder",
+        "role": "All Rounder",
         "price": 250000
       },
       {
         "id": 9,
         "image": "https://i.ibb.co.com/qDPyTZn/Screenshot-2024-11-24-143524.png",
         "name": "Morgan Lee",
-        "country":"Bangladesh",
+        "country":"NewZealand",
         "rating": 82,
-        "role": "Baller",
+        "role": "Bowling",
         "price": 200000
       }
  ]
