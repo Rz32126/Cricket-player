@@ -21,7 +21,7 @@ const Player = ({ handleSelectedPlayer }) => {
     
     return (
       <div>
-      <h2 className="btn mx-4">Available Players</h2>
+      <h2 className="font-bold text-xl ml-12">Available Players</h2>
 
     <div className="grid lg:grid-cols-3 grid-cols-1 mt-7 gap-4 w-11/12 mx-auto">
       {products.map(product => (

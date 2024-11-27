@@ -7,7 +7,7 @@
         "name": "Musfiqur Rahim",
         "country":"Bangladesh",
         "rating": 85,
-        "role": "Forward",
+        "role": "Bating",
         "price": 250000
       },
       {
@@ -34,16 +34,16 @@
         "name": "Morgan Lee",
         "country":"England",
         "rating": 82,
-        "role": "Goalkeeper",
+        "role": "bating",
         "price": 200000
       },
       {
         "id": 5,
         "image": "https://i.ibb.co.com/4gNFfQw/Screenshot-2024-11-24-143617.png",
-        "name": "Taylor Brown",
+        "name": "Sochin Tendulkar",
         "country":"India",
         "rating": 88,
-        "role": "Winger",
+        "role": "Bating",
         "price": 280000
       },
       {
@@ -52,7 +52,7 @@
         "name": "Jordan White",
         "country":"Australia",
         "rating": 76,
-        "role": "Center Back",
+        "role": "Baller",
         "price": 120000
       },
       {
@@ -79,7 +79,7 @@
         "name": "Morgan Lee",
         "country":"Bangladesh",
         "rating": 82,
-        "role": "Goalkeeper",
+        "role": "Baller",
         "price": 200000
       }
  ]

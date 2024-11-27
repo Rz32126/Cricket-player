@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='mx-4 rounded-lg'>
             <div className='flex justify-center bg-black'>
-              <img className="mt-14" src={logo} alt="" />
+              <img className="mt-28" src={logo} alt="" />
             </div>
 
             <footer className="footer bg-black text-white p-10">

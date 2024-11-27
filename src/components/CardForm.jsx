@@ -1,12 +1,9 @@
 
 
-const form = () => {
+const CardForm = () => {
     return (
-        <div className="bg-orange-300 mx-20 rounded-lg h-60 mt-9">
-            
-           <div className="mt-14">
-           <p className="font-bold text-2xl text-center">Subscribe to our Newsletter</p>
-           </div>
+        <div className="bg-orange-300 mx-20 rounded-lg h-64 relative top-24 border-2 border-yellow-400 px-2 py-7">
+           <p className="font-bold text-2xl text-center ">Subscribe to our Newsletter</p>
             
             <p className="text-center mt-9">Get the latest updates and news right in your inbox!</p>
             <div className="mx-96 mt-4">
@@ -20,4 +17,4 @@ const form = () => {
     );
 };
 
-export default form;
+export default CardForm;

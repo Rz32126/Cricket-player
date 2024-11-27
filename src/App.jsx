@@ -30,11 +30,15 @@ function App() {
 
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
-  // const [price, setPrice] = useState(50000);
+  const [price, setPrice] = useState(0);
 
-  // const handleAddPrice = (price) => {
-  //     setPrice(price+price)
-  // }
+  const handleAddPrice = (pr) => {
+      setPrice(price-pr)
+  }
+
+  const handleCredit = () => {
+    setPrice(price+700000)
+  }
 
   const handleDelete = (id) => {
     const restPlayer = selectedPlayers.filter((p) => p.id != id);
@@ -44,10 +48,11 @@ function App() {
   const handleSelectedPlayer = (player) => {
     const isExist = selectedPlayers.find(previousPlayer => previousPlayer.id === player.id)
     if (!isExist) {
+      handleAddPrice(player.price);
       setSelectedPlayers([...selectedPlayers, player]);
     }  else {
-      // handleAddPrice(player.price)
-      alert('player already added')
+      
+      alert('player already added');
      }
     
   }
@@ -57,8 +62,8 @@ function App() {
 
   return (
     <>
-       <Navbar></Navbar>
-       <Header></Header>
+       <Navbar price={price}></Navbar>
+       <Header handleCredit={handleCredit}></Header>
       <div className="mt-4">
         <CartContainer isActive={isActive} handleIsActiveState={handleIsActiveState} handleSelectedPlayer={handleSelectedPlayer}
         selectedPlayers={selectedPlayers}

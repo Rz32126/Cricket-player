@@ -4,6 +4,7 @@ import { MdDeleteForever } from "react-icons/md";
 const Selected = ({ selectedPlayers, handleDelete }) => {
     return (
         <div>
+            <button className='text-xl font-bold ml-16'>Selected Player: ({selectedPlayers.length}/6) </button>
             {
                 selectedPlayers.map((player) => (
                     <div key={player.id}>
